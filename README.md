@@ -1,12 +1,14 @@
-# React + Vite
+# Matrix Color Changer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React project demonstrating color changes in a 3x3 matrix using a queue data structure.
 
-Currently, two official plugins are available:
+## How It Works
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Initially, all 9 boxes are empty.
+- When a box is clicked, it turns green.
+- Once all boxes are filled (i.e., all turned green), they start changing to orange one by one in the same order they were clicked.
 
-## Expanding the ESLint configuration
+## Key Concepts
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Queue data structure used to track the order of clicked boxes.
+- React state manages color changes and click tracking.
